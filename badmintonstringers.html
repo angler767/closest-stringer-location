@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>testing?</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    
+    <div id= "debug"></div>
+    <div id="map"></div>
+    <div id="msg"></div>
+    <h1>Input Location</h1>
+
+  
+  
+  <input type="number" id="lat" placeholder="latitude"><br><br>
+  <input type="number" id="lng"placeholder="longitude"><br><br>
+
+  <button onclick = "inpput()" id = "button1">Find Closest stringer</button>
+
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+  
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD19wesrRHHOaapBRcChO70XTL7zG7u3X8&callback=initMap&libraries=&v=weekly"
+      async
+
+    ></script>
+  </body>
+</html>
