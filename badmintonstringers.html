@@ -8,18 +8,52 @@
   </head>
   <body>
     
+    <div class = "output"></div>
+
     <div id= "debug"></div>
     <div id="map"></div>
     <div id="msg"></div>
     <h1>Input Location</h1>
-
-  
-  
+       
   <input type="number" id="lat" placeholder="latitude"><br><br>
-  <input type="number" id="lng"placeholder="longitude"><br><br>
+  <input type="number" id="lng" placeholder="longitude"><br><br>
 
-  <button onclick = "inpput()" id = "button1">Find Closest stringer</button>
+  <button onclick = "inpput()" id = "button1">Find Closest Stringer</button>
+  
+  <br><br>
 
+  <input id="latlng" type="text" placeholder="Coordinates without brackets"> <br><br>
+
+  <input id="submit" type="button" value="Reverse Geocode" /> <br><br>
+
+  <div id="instructions">
+    <h1 style= " position: relative;
+    top: -280px;
+    text-align: center;
+    font-size: 30px;"><b>Instructions</b></h1>
+  </div>
+
+  <div id = "list">
+    <p style = "position: absolute;
+    
+    top: 650px;
+    right: 300px;
+    text-align: center;
+    font-size: 20px;"> 
+      1. Input your location in coordinate form into latitude and longitude boxes and click "Find Closest Stringer"<br><br>
+      2. Reverse geocode coordinates given if necessary to find address of establishment
+      <br>
+      <br>
+      
+      Your favorite stringer not listed? <a href="https://forms.gle/mwqw3CkMfdxJeZs18" target="_blank">Add Stringer!</a>
+
+      <br>
+      <br>
+
+      A small donation would be greatly appreciated at ~>> <a href="url">https://paypal.me/badmintonstringing?country.x=CA&locale.x=en_US </a> :)
+  </p>
+  </div>
+  
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
